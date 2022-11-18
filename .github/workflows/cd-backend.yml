@@ -22,6 +22,6 @@ jobs:
         run: npm install -g @railway/cli
       - name: Deploy
         working-directory: back-end/
-        run: railway up --detach --service sgcm-natalia2
+        run: railway up --detach --service sgcm-natalia
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
