@@ -45,6 +45,6 @@ jobs:
         run: npm run build --prod
       - name: Deploy
         working-directory: front-end/dist/sgcmapp
-        run: railway up --detach --service sgcm-natalia2 tem que colocar o nome do seu serviço 
+        run: railway up --detach --service sgcm-natalia-frontend
         env:
            RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
